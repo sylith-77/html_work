@@ -1,0 +1,34 @@
+ul{
+  list-style: none;
+  padding-left: 0   ;
+}
+
+ul{
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+li{
+  width: 120px;
+  font-weight: bold;
+  line-height: 30px;
+}
+input[type="txt"], input[type="email"], input[type="password"], select {
+  width: 300px;
+  height: 25px;
+}
+.buttons{
+  text-align: center;
+}
+
+.buttons input{
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+}
+
+.buttons input:hover {
+  background-color: bisque;
+  color: #000;
+}
