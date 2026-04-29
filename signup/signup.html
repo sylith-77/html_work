@@ -3,17 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/signup.css"
+    <script src="./js/signup.js"></script>
     <title>회원가입</title>
-    <!-- 자바스크립트 코드 들어가는 곳-->>
+    <!-- 자바스크립트 코드 들어가는 곳-->
      <script>
+      // 함수를 생성
+      
       // alert("짠~~~");
-      console.log("자바스크립트에요~~~")
+      //console.log("자바스크립트에요~~~")
      </script>
        </head>
   <body>
     <div class="container">
       <h1>회원 가입을 환영합니다.</h1>
-      <form method="get">
+      <form onsubmit="check_sign(event)" method="get">
         <fieldset>
           <legend>사용자정보</legend>
           <ul>
@@ -62,7 +66,7 @@
                     <input type="radio" name="mail" id="mail_yes" value="yes" checked>
                     <label for="mail_yes">메일 수신</label>
                     <input type="radio" name="mail" id="mail_no" value="no">
-                    <label for="mail_no">수신 안함</label>
+                    <label for="mail_no">메일수신 안함</label>
                     
         </fieldset>
         <fieldset>
