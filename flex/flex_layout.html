@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body{
+      display: flex;
+      justify-content: center;
+    }
+    .container{
+      display: flex;
+      flex-direction: column;
+      width: 1200px;
+    }
+    header{
+      border-bottom: 1px solid gray;
+    }
+    footer{
+      border-top: 1px solid gray;
+    }
+    nav{
+      border-right: 1px solid gray;
+    }
+    aside{
+      border-left: 1px solid gray;
+    }
+    nav, aside{
+      /* 너비 고정 */
+      flex-basis: 150px;
+      /* 다른 놈 희생 */
+      flex-shrink: 0;
+    }
+    .content{
+      display: flex;
+    }
+    main{
+      text-align: justify;
+      padding: 10px;
+      column-count: 4;
+      column-width: 200px;
+      column-gap: 20px;
+      column-rule-color: red;
+      column-rule-style: solid;
+      column-rule-width: 1px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Holy Grail Layout</h1>
+    </header>
+    <section class="content">
+      <nav>
+        <ul>
+          <li>main</li>
+          <li>about</li>
+          <li>help</li>
+        </ul>
+      </nav>
+      <main>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam modi labore, tempore vitae deserunt eum esse ab, ipsam maxime doloribus neque? Nihil, dolorum libero. Natus laboriosam perferendis autem hic odit.
+          Animi quisquam recusandae et nam iste fuga, expedita itaque mollitia quia nostrum, alias eius laudantium optio vero incidunt sint, officiis veniam accusamus sequi sed voluptatem. Pariatur corrupti quaerat odit quis.
+          Quia magni dicta excepturi necessitatibus quae omnis unde est, accusamus vel eius possimus suscipit vitae recusandae perspiciatis nemo aliquam minus beatae, blanditiis iusto deleniti. Aliquid reiciendis omnis labore enim earum.
+          Quibusdam, neque, quod et, eum pariatur ullam reprehenderit iure labore iste necessitatibus sint? Quod eos modi excepturi omnis vero eum quis, tempora sit quaerat natus harum praesentium, unde, earum ex!
+          Esse qui dolorum fugit pariatur incidunt, vel distinctio beatae magni dolores architecto modi est hic, deserunt possimus doloremque delectus sunt, numquam odio eveniet deleniti asperiores quia voluptas doloribus blanditiis. Odio!
+          Consectetur quam sed repellendus numquam dicta tenetur, in corrupti delectus error! Aliquam sunt repellendus exercitationem animi porro unde repudiandae ducimus earum alias sapiente autem, placeat quaerat quos quibusdam doloremque nulla.
+          Accusamus exercitationem vero iusto maxime ullam amet saepe animi accusantium tempore nihil commodi nulla doloribus reiciendis alias atque eum fuga, veritatis adipisci tenetur. Ut et velit accusamus? Rem, minima rerum.
+          Blanditiis, soluta quibusdam! Neque, quos deserunt! Ullam, eveniet illum! Sapiente est alias suscipit iusto dolore quod? Provident, hic inventore corporis nemo quisquam quas vitae repudiandae odio voluptatum deleniti, quo dignissimos.
+          Doloremque, obcaecati iure similique perferendis rerum quasi. Saepe magni sint atque nisi, fugit recusandae quis ea illo delectus alias necessitatibus corrupti consequuntur aspernatur temporibus eos. Placeat voluptas commodi perspiciatis aperiam.
+          Debitis accusantium nesciunt animi voluptatibus optio corrupti fugit nulla sint impedit eligendi ex, blanditiis sed earum sequi obcaecati eos voluptatem illum voluptas aut, soluta ut officiis quod dignissimos vero! Nihil.
+        </p>
+      </main>
+      <aside>
+        AD (광고)
+      </aside>
+    </section>
+    <footer>
+      <a href="www.naver.com">홈페이지</a>
+    </footer>
+  </div>
+</body>
+</html>
